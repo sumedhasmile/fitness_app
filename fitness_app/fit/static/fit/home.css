@@ -191,3 +191,40 @@ nav ul li a:hover{
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.frm{
+    
+    margin: 5% auto;
+    width: 40%;
+    height: max-content;
+    border: 2px solid grey;
+    border-radius: 3px;
+}
+.frm-text p{
+    font-size: 22px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white; 
+}
+.frm input[type=email],input[type=password]{
+    width:80%;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.frm > div{
+    margin:10px;
+    padding:10px;
+}
+.frm-text{
+    margin: auto;
+    width: 100%;
+}
+.frm input[type=submit]{
+    font-size: 20px;
+    font-family: sans-serif;
+    transition-duration: 5ms ease ;
+}
+.frm input[type=submit]:hover{
+    background-color: coral;
+    color: cornsilk;
+    cursor: pointer;
+}

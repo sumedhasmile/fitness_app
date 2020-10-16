@@ -1,6 +1,6 @@
 {% load static %}
 
-{% block nav %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +19,7 @@
 </head>
 <body>  
 
-
+{% block nav %}
     <header>
         <nav>
             <div class="menu-icon">
@@ -32,13 +32,19 @@
             </div>
             <div class="menu">
                 <ul>
-                   <li><a href="#">LOGIN</li>
-                   <li><a href="#">SIGNUP</li>
+                {% block login %}
+                    <li><a href="{% url 'fit:login' %}">LOGIN</li>
+                {% endblock login %}
+                {% block signup  %}
+                     <li><a href="#">SIGNUP</li>
+                {% endblock signup %}
                 </ul>
             </div>
         </nav>
     </header>
 {% endblock nav %}
+{% block main %}
+
     <div class="container">
         <p class="middle-text">
             WORK HARD
@@ -79,6 +85,11 @@
             <p class="info">
                 JOIN TO TRANSFORM
            </p>
+    </div>
+    {% endblock main %}
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
     </div>
 </body>
 <footer>
