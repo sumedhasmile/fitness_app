@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+              <input type="text" class="form-control" name="fname"  placeholder="First Name">
+
+              <input type="text" class="form-control" name="lname" placeholder="Last Name">
+
+              <input type="number" class="form-control" name="mob" placeholder="Mobile">
+
+
+              <input type="file"  name="img" placeholder="Profile Pic">
+
+
+              <input type="email" class="form-control" name="email" placeholder="Email">
+
+
+              <input type="text" class="form-control" name="user" placeholder="Username">
+              <input type="password" class="form-control" name="pwd" placeholder="Password">
+              <input type="number" class="form-control" name="age" placeholder="Age">
+              <input type="text" class="form-control" name="gender" placeholder="Gender">
+              <input type="text" class="form-control" name="weight" placeholder="Weight">
+              <input type="text" class="form-control" name="height" placeholder="Height">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+
+          </form>
+</body>
+</html>
