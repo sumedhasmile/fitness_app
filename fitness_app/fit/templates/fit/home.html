@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        HOME
+        {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="{% static 'fit/home.css' %}">
+    <script src="{% static 'fit/home.js' %}"></script>
+</head>
+<body>  
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                {% block heading %}
+                   FITNESS
+                {% endblock heading %}
+            </div>
+            <div class="menu">
+                <ul>
+                   <li><a href="#">LOGIN</li>
+                   <li><a href="#">SIGNUP</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <p class="middle-text">
+            WORK HARD
+        </p>
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'fit/active-young-woman-training-outdoor.jpg' %}">
+            <p class="info">
+                PASSION
+            </p>
+        </div>
+        <p class="middle-text">
+            YOU HAVE IT IN YOU
+        </p>
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'fit/active-young-woman-training-outdoor.jpg' %}">
+            <p class="info">
+                EXERCISE
+            </p>
+        </div>
+        <p class="middle-text">
+            RUN FARTHER, RUN BETTER
+        </p>
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'fit/active-young-woman-training-outdoor.jpg' %}">
+            <p class="info">
+                IGNITE YOUR INNER POTENTIAL 
+            </p>
+        </div>
+        <p class="middle-text">
+            SHAPE YOUR BODY, SHAPE YOUR LIFE
+        </p>
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'fit/active-young-woman-training-outdoor.jpg' %}">
+            <p class="info">
+                DREAM
+            </p>
+        </div>
+        <p class="middle-text">
+            JOIN TO TRANSFORM
+        </p>
+        <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="{% static 'fit/active-young-woman-training-outdoor.jpg' %}">
+            <p class="info">
+                ASK
+            </p>
+    </div>
+</body>
+</html>
