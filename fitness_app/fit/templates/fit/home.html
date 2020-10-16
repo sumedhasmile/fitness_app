@@ -1,5 +1,6 @@
 {% load static %}
 
+{% block nav %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +18,8 @@
     <script src="{% static 'fit/paralaxx.min.js' %}"></script>
 </head>
 <body>  
+
+
     <header>
         <nav>
             <div class="menu-icon">
@@ -24,7 +27,7 @@
             </div>
             <div class="logo">
                 {% block heading %}
-                   FITNESS
+                   FITNESS FREAKS
                 {% endblock heading %}
             </div>
             <div class="menu">
@@ -35,6 +38,7 @@
             </div>
         </nav>
     </header>
+{% endblock nav %}
     <div class="container">
         <p class="middle-text">
             WORK HARD
@@ -77,4 +81,16 @@
            </p>
     </div>
 </body>
+<footer>
+    <div class="foot">
+        <div class="text">
+           <p>JOIN US</p>
+        </div>
+        <div class="text">
+            <h4>Made By</h4>
+            <p>ManojKumar</p>
+            <p>Sumedha</p>
+        </div>
+    </div>
+</footer>
 </html> 

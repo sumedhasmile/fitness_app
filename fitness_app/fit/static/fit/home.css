@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color:  #4a4747 ;
+    background-color:  #272727  ;
 }
 
 body {
@@ -177,4 +177,17 @@ nav ul li a:hover{
 .text {
     position: relative;
     top: 50px;
+}
+
+.foot   {
+    display: flex;
+    
+    max-height: fit-content;
+}
+.text{
+    text-align: center;
+    color: white;
+    flex-basis: 50%;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
