@@ -22,13 +22,8 @@ from fit.views import *
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
-        
                   path('' , include('fit.urls'))
-                  path('', Home, name="home"),
-                  path('signup/', Signup, name="signup"),
-                  path('login/', Login, name="Login"),
-                  path('AddTask/', Add_Task, name="task")
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+              ] 
 
 
   

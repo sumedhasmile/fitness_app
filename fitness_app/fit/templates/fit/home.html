@@ -39,6 +39,13 @@
                 {% block signup  %}
                      <li><a href="{% url 'fit:signup' %}">SIGNUP</a></li>
                 {% endblock signup %}
+
+                {% if user.is_authenticated %}
+                    {% block logout %}
+                        <li><a href="{% url 'fit:logout' %}">LOGOUT</a></li>
+                    {% endblock logout %}  
+                {% endif %}      
+                
                 </ul>
             </div>
         </nav>
