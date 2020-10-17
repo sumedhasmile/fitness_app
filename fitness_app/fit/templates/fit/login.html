@@ -9,11 +9,13 @@
 
 {% block main %}
 {% endblock main %}
+
 {% block content %}
-    <form action="" class="frm">
+    <form method="post" class="frm">
+        {% csrf_token %}
         <div class="frm-text">
             <p>Email</p>
-            <input type="email" name="emil" id="email" placeholder="Enter your Email">
+            <input type="email" name="email" id="email" placeholder="Enter your Email">
         </div>
         <div class="frm-text">
             <p>Password</p>

@@ -6,3 +6,6 @@ def index(request):
 
 def login_get(request):
     return render(request,'fit/login.html')
+
+def signup_get(request):
+    return render(request,'fit/signup.html')

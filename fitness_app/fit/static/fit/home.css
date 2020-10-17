@@ -18,7 +18,7 @@ header {
 
 .content {
   
-    width: 94%;
+    width: 100%;
     margin:auto auto;
     font-size: 20px;
     line-height: 10px;
@@ -39,7 +39,7 @@ header {
 }
 
 nav {
-    background-color: lightgreen;
+    background-color:   #f6f4ca  ;
     position: fixed;
     width: 100%;
     line-height: 60px;
@@ -51,7 +51,7 @@ nav ul {
     list-style: none;
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
-    color: #fff;
+    color: coral;
     padding: 0;
     text-align: right;
     margin: 0;
@@ -71,7 +71,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color:   #017a0d  ;
     font-size: 20px;
 }
 nav ul li a:hover{
@@ -135,7 +135,9 @@ nav ul li a:hover{
     .menu-icon {
           display: block;
     }
-
+    .frm{
+        width: 100%;
+    }
 }
 
 .container {
@@ -185,11 +187,15 @@ nav ul li a:hover{
     max-height: fit-content;
 }
 .text{
+    
     text-align: center;
     color: white;
     flex-basis: 50%;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#join{
+    border-right: 2px solid white;
 }
 .frm{
     
@@ -205,7 +211,8 @@ nav ul li a:hover{
     text-decoration: none;
     color: white; 
 }
-.frm input[type=email],input[type=password]{
+.frm input[type=email],input[type=password],
+input[type=text],input[type=number]{
     width:80%;
     font-size: 18px;
     font-family: sans-serif;
@@ -218,13 +225,38 @@ nav ul li a:hover{
     margin: auto;
     width: 100%;
 }
+.frm > h2{
+    margin:10px ;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: coral;
+    text-decoration: none;
+}
 .frm input[type=submit]{
     font-size: 20px;
     font-family: sans-serif;
-    transition-duration: 5ms ease ;
+    transition-delay: 5ms ease ;
 }
 .frm input[type=submit]:hover{
     background-color: coral;
     color: cornsilk;
     cursor: pointer;
 }
+ .gen{
+     width: max-content;
+     color: cornflowerblue;
+     font-size: 16px;
+     font-family: sans-serif;
+     margin: 5px;
+    
+ }
+ .gen option{
+     font-size: 16px;
+     font-family: sans-serif;
+     margin: 5px;
+ }
+ .gen option:hover{
+     color: cornsilk;
+     background-color: crimson;
+     cursor: pointer;
+ }

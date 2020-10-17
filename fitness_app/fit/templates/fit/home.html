@@ -33,10 +33,10 @@
             <div class="menu">
                 <ul>
                 {% block login %}
-                    <li><a href="{% url 'fit:login' %}">LOGIN</li>
+                    <li><a href="{% url 'fit:login' %}">LOGIN</a></li>
                 {% endblock login %}
                 {% block signup  %}
-                     <li><a href="#">SIGNUP</li>
+                     <li><a href="{% url 'fit:signup' %}">SIGNUP</a></li>
                 {% endblock signup %}
                 </ul>
             </div>
@@ -93,8 +93,9 @@
     </div>
 </body>
 <footer>
+<hr>
     <div class="foot">
-        <div class="text">
+        <div class="text" id="join">
            <p>JOIN US</p>
         </div>
         <div class="text">

@@ -1,0 +1,75 @@
+{% extends './home.html' %}
+
+{% block title %}
+    SIGNUP
+{% endblock title %}
+
+{% block signup  %}
+{% endblock signup  %}
+
+{% block main %}
+{% endblock main %}
+
+{% block content %}
+     <form method="post" enctype="multipart/form-data" class="frm">
+            {% csrf_token %}
+                <h2>SIGNUP</h2>
+              <div class="frm-text">
+                  <p>First Name</p>
+                  <input type="text" name="fname"  placeholder="First Name">
+              </div>
+
+              <div class="frm-text">
+                <p>Last Name</p>
+                <input type="text" name="lname"  placeholder="Last Name">
+              </div>
+
+              <div class="frm-text">
+                <p>Phone number</p>
+                <input type="number" name="pno"  placeholder="Phone number">
+              </div>
+
+
+              <div class="frm-text">
+                <p>Profile picture</p>
+                <input type="file" name="pic"  placeholder="Choose a picture">
+              </div>
+
+
+              <div class="frm-text">
+                <p>Email</p>
+                <input type="email" name="email"  placeholder="Your Email">
+              </div>
+
+
+              <div class="frm-text">
+                <p>Username</p>
+                <input type="text" name="uname"  placeholder="Enter Username">
+              </div>
+              <div class="frm-text">
+                <p>Password</p>
+                <input type="text" name="pass"  placeholder="Enter Password">
+              </div>
+              <div class="frm-text">
+                <p>Confirm Password</p>
+                <input type="password" name="con_pass"  placeholder="Confirm Password">
+              </div>
+              <div class="frm-text">
+                <p>Age</p>
+                <input type="number" name="age"  placeholder="Your Age">
+              </div>
+              <div class="frm-text">
+                <p>Gender</p>
+               <select name="gender" id="gender" class="gen">
+                   <option  value="female">Female</option>
+                   <option value="male">Male</option>
+                   <option value="other">Other</option>
+               </select>
+              </div>
+             <div>
+                 <input type="submit" value="Submit">
+             </div>
+
+          </form>
+
+{% endblock content %}
