@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color:  #272727  ;
+    background-color:  #272727;
 }
 
 body {
@@ -39,7 +39,7 @@ header {
 }
 
 nav {
-    background-color:   #f6f4ca  ;
+    background-color:#f6f4ca;
     position: fixed;
     width: 100%;
     line-height: 60px;

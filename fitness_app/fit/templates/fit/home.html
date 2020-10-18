@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>
         {% block title %}
         HOME
@@ -43,6 +44,7 @@
                 {% if user.is_authenticated %}
                     {% block logout %}
                         <li><a href="{% url 'fit:logout' %}">LOGOUT</a></li>
+                        <li><a href="{% url 'fit:add_task' request.user.id %}">ADD TASK</a></li>
                     {% endblock logout %}  
                 {% endif %}      
                 
