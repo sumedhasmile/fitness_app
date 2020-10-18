@@ -36,7 +36,7 @@ class Goals(models.Model):
 
 
 class Food_details(models.Model):
-    user = models.ForeignKey(User_details, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     category = models.CharField(max_length=500, choices=options)
     food_type = models.CharField(max_length=500, null=True)
     calorie = models.DecimalField(max_digits=5, decimal_places=2, default=0, blank=True)

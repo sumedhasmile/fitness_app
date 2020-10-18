@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% load static %}
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,7 +55,7 @@
     </tbody>
   </table>
       <div class="text-left">
-          <button  class="btn btn-primary" >View Calories </button>
+         <a href="{% url 'fit:calories' %}">View Calories </a>
       </div>
 </div>
 </body>

@@ -13,4 +13,5 @@ urlpatterns = [
                   path("signup_post", views.Signup, name="signup_post"),
                   path("login_post", views.Login, name="login_post"),
                   path("add_task/<int:id>", views.Add_task, name="add_task"),
+                  path("calories", views.Calories, name="calories")
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -71,7 +71,6 @@ def Login(request):
 def Add_task(request, id):
     task = Goals.objects.filter(user=request.user)
     if request.method == "POST":
-
         dic = request.POST
         tasks = dic["title"]
         date = dic["task_date"]
@@ -79,3 +78,8 @@ def Add_task(request, id):
         Goals.objects.create(user=request.user, task_name=tasks, Due_date=due_date, Task_date=date)
     d = {"task": task}
     return render(request, 'fit/add_task.html', d)
+
+
+def Calories(request):
+    food = Food_details.objects.filter(user=request.user)
+    return render(request,'fit/calculate_calories.html')

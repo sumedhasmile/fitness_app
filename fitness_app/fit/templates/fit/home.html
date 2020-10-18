@@ -45,8 +45,8 @@
                     {% block logout %}
                         <li><a href="{% url 'fit:logout' %}">LOGOUT</a></li>
                         <li><a href="{% url 'fit:add_task' request.user.id %}">ADD TASK</a></li>
-                    {% endblock logout %}  
-                {% endif %}      
+                    {% endblock logout %}
+                {% endif %}
                 
                 </ul>
             </div>
