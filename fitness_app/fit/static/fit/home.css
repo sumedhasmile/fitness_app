@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color:  #272727;
+    background-color:  #272727  ;
 }
 
 body {
@@ -17,7 +17,7 @@ header {
 }
 
 .content {
-  
+
     width: 100%;
     margin:auto auto;
     font-size: 20px;
@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-  
+
     line-height: 70px;
     position: fixed;
     float: left;
@@ -39,14 +39,14 @@ header {
 }
 
 nav {
-    background-color:#f6f4ca;
+    background-color:   #f6f4ca  ;
     position: fixed;
     width: 100%;
     line-height: 60px;
 }
 
 nav ul {
-    
+
     line-height: 60px;
     list-style: none;
     background: rgba(0, 0, 0, 0);
@@ -64,7 +64,7 @@ nav.black ul {
 }
 
 nav ul li {
-    
+
     display: inline-block;
     padding: 16px 20px;;
 }
@@ -78,7 +78,7 @@ nav ul li a:hover{
     font-weight: bold;
     color:coral;
     transition-duration: 1ms;
-   
+
 }
 
 .menu-icon {
@@ -103,7 +103,7 @@ nav ul li a:hover{
 
 
 @media(max-width: 786px) {
-   
+
     .logo {
           font-size: medium;
           position: fixed;
@@ -121,7 +121,7 @@ nav ul li a:hover{
     }
 
     .showing {
-         
+
           max-height: 34em;
     }
 
@@ -152,7 +152,7 @@ nav ul li a:hover{
     width: 100%;
     image-rendering: auto;
     min-height: 600px;
-    
+
     border-image: 30 round;
 }
 
@@ -183,11 +183,11 @@ nav ul li a:hover{
 
 .foot   {
     display: flex;
-    
+
     max-height: fit-content;
 }
 .text{
-    
+
     text-align: center;
     color: white;
     flex-basis: 50%;
@@ -198,7 +198,7 @@ nav ul li a:hover{
     border-right: 2px solid white;
 }
 .frm{
-    
+
     margin: 5% auto;
     width: 40%;
     height: max-content;
@@ -209,7 +209,7 @@ nav ul li a:hover{
     font-size: 22px;
     font-family: sans-serif;
     text-decoration: none;
-    color: white; 
+    color: white;
 }
 .frm input[type=email],input[type=password],
 input[type=text],input[type=number]{
@@ -248,7 +248,7 @@ input[type=text],input[type=number]{
      font-size: 16px;
      font-family: sans-serif;
      margin: 5px;
-    
+
  }
  .gen option{
      font-size: 16px;
@@ -260,3 +260,61 @@ input[type=text],input[type=number]{
      background-color: crimson;
      cursor: pointer;
  }
+.message{
+    margin: 5% auto;
+    height: fit-content;
+    padding: 15px;
+    width: 20%;
+    border: darkgray 2px solid;
+    border-radius: 3px;
+    color: darkorange;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    color: honeydew;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color:grey;
+  }
+
+  .set-goal{
+      margin: 20px;
+      width: 40%;
+      border: 2px solid darkgrey;
+      border-radius: 3px;
+  }
+  .set-goal div{
+      margin: 10px;
+  }
+  .task-frm{
+      position: relative;
+      width: 100%;
+      margin: 5%;
+      padding: 1px;
+  }
+  .task-frm input[type=submit]{
+      color: darkblue;
+      border-radius: 2px;
+  }
+  .task-frm input[type=submit]:hover{
+      color: white;
+      cursor: pointer;
+      border:2px solid coral;
+      border-radius: 2px;
+  }
